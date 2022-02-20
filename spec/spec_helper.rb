@@ -1,5 +1,5 @@
 # Require this file for unit tests
-ENV['HANAMI_ENV'] ||= 'test'
+ENV['HANAMI_ENV'] ||= 'development'
 
 require_relative '../config/environment'
 Hanami.boot
