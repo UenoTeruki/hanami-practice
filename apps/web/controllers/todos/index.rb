@@ -6,8 +6,10 @@ module Web
 
         expose :result
 
-        def initialize(interactor: FetchAllTodos.new)
-          @interactor = interactor
+        def initialize
+          @interactor = FetchAllTodos.new(
+            repository: TodoRepository.new
+          )
         end
 
         def call(params)

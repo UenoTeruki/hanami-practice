@@ -5,7 +5,7 @@ class FetchAllTodos
 
   expose :all_todos
 
-  def initialize(repository: TodoRepository.new)
+  def initialize(repository:)
     @repository = repository
   end
 
